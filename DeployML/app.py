@@ -23,7 +23,7 @@ def predict():
     
     # Convert latitude and longitude to numpy array
     user_location = np.array([[user_latitude, user_longitude]])
-    loaded_model = joblib.load(r'C:\Users\daffa\OneDrive\Desktop\model\knn_model.pkl') #<<<ini diganti pathnya...
+    loaded_model = joblib.load(r'..\DeployML\knn_model.pkl') #<<<ini diganti pathnya...
 
     # loaded_model = load_model()
     nearest_griya = loaded_model.predict(user_location)
